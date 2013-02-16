@@ -8,6 +8,7 @@
 	br = branch
 	ci = commit
 	st = status
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 [core]
 	quotepath = false
 	excludesfile = /Users/romainberger/.gitignore_global
