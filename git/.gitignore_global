@@ -1,4 +1,3 @@
-
 .DS_Store
 *~
 *.pyc
@@ -7,3 +6,4 @@ Icon
 .sass-cache
 .svn
 node_modules
+venv
