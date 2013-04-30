@@ -6,8 +6,10 @@
 	"font_face": "Menlo Regular",
 	"font_size": 12.0,
 	"highlight_modified_tabs": true,
-	"trim_trailing_white_space_on_save": true,
-	"translate_tabs_to_spaces": true,
 	"scroll_past_end": true,
-	"show_minimap": false
+	"word_wrap": true,
+	"show_minimap": false,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".sass-cache"]
 }
