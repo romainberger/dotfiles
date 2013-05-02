@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[CHECK=\033[32m✔ Done\033[39m
+HR=\033[37m--------------------------------------------------\033[39m
+
+build:
+    @echo "\${HR}"
+    @printf "\033[36mBuild...\033[39m"
+    @echo "                   \${CHECK}"
+
+]]></content>
+    <tabTrigger>makefile</tabTrigger>
+</snippet>
