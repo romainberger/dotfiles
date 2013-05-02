@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[!function(\$) {
+
+  'use strict'
+
+  $1
+
+}(window.jQuery);
+
+]]></content>
+    <tabTrigger>iife</tabTrigger>
+    <description>Javascript - IIFE</description>
+    <!-- <scope>source.javascript</scope> -->
+</snippet>
