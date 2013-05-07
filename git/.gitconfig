@@ -17,7 +17,7 @@
 [color]
 	ui = auto
 [color "branch"]
-	current = yellow reverse
+	current = magenta
 	local = yellow
 	remote = green
 [color "diff"]
