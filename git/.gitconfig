@@ -9,7 +9,7 @@
 	ci = commit
 	st = status
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	rmall = !sh -c 'git rm $(git ls-files -d)' -
+	rmall = !git rm $(git ls-files -d)
 	count = !git shortlog -sn
 	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
 [core]
