@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+-webkit-box-shadow: $1;
+   -moz-box-shadow: $2;
+    -ms-box-shadow: $3;
+     -o-box-shadow: $4;
+        box-shadow: $5;
+]]></content>
+    <tabTrigger>box-shadow</tabTrigger>
+    <scope>source.css</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+-webkit-appearance: $1;
+   -moz-appearance: $2;
+    -ms-appearance: $3;
+     -o-appearance: $4;
+        appearance: $5;
+]]></content>
+    <tabTrigger>appearance</tabTrigger>
+    <scope>source.css</scope>
+</snippet>

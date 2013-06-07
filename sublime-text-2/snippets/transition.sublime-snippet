@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+-webkit-transition: $1;
+   -moz-transition: $2;
+    -ms-transition: $3;
+     -o-transition: $4;
+        transition: $5;
+]]></content>
+    <tabTrigger>transition</tabTrigger>
+    <scope>source.css</scope>
+</snippet>
