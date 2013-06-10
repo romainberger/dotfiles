@@ -1,3 +1,5 @@
 
 alias bbs='cd ~/Web/Bbs'
 alias todo='emacs ~/Web/Bbs/todo'
+alias sites='cd ~/Web/Sites'
+alias ..="cd .."
