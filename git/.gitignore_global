@@ -7,4 +7,5 @@ Icon
 .sass-cache
 .svn
 node_modules
+npm-debug.log
 venv
