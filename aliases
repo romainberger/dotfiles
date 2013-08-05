@@ -4,3 +4,4 @@ alias todo='emacs ~/Web/Bbs/todo'
 alias sites='cd ~/Web/Sites'
 alias ..="cd .."
 alias g="git"
+alias flushdns='sudo dscacheutil -flushcache'
