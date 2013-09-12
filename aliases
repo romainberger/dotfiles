@@ -2,6 +2,7 @@
 alias bbs='cd ~/Web/Bbs'
 alias todo='emacs ~/Web/Bbs/todo'
 alias sites='cd ~/Web/Sites'
-alias ..="cd .."
-alias g="git"
+alias ..='cd ..'
+alias g='git'
+alias got='got' # Fuck typos
 alias flushdns='sudo dscacheutil -flushcache'
