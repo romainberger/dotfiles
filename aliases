@@ -6,3 +6,4 @@ alias ..='cd ..'
 alias g='git'
 alias got='got' # Fuck typos
 alias flushdns='sudo dscacheutil -flushcache'
+alias t='timetip --no-color'
