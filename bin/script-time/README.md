@@ -16,3 +16,5 @@ Very easy:
     node script-time.js 2013-10-01 2013-10-31
 
 It will just log in the console the tasks and the total time for each of these tasks.
+
+Nothing fancy, so there is no error handling or default time if you don't provide the arguments.
