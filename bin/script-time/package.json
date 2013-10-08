@@ -3,7 +3,11 @@
    "description": "Simple script to get the total time of tasks on timetip",
    "version": "0.1.0",
    "homepage": "http://github.com/romainberger/dotfiles/bin/script-time",
-   "author": "Romain Berger",
+   "author": {
+      "name": "Romain Berger",
+      "email": "romain@romainberger.com",
+      "url": "romainberger.com"
+   },
    "dependencies": {
       "timetip": "0.1.0"
    },
