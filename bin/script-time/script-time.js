@@ -21,6 +21,7 @@ var args    = process.argv
   , month   = log.range([start, end])
   , tasks   = []
   , output  = []
+  , longest = 0
 
 /**
  * Converts milliseconds to time
@@ -37,7 +38,6 @@ function msToTime(s) {
 }
 
 month.dates.forEach(function(date) {
-
   date.entries.forEach(function(entry) {
     if (entry.type == 'break') {
       return
@@ -49,13 +49,26 @@ month.dates.forEach(function(date) {
     else {
      tasks[entry.project] += entry.duration
     }
-  })
 
+    if (entry.project.length > longest) {
+      longest = entry.project.length
+    }
+  })
 })
+
+longest += 3
 
 // Output the results
 console.log('Report: '+start+' - '+end)
 for (var task in tasks) {
-  var time = msToTime(tasks[task])
+  var time  = msToTime(tasks[task])
+    , space = longest - task.length
+
+  if (space > 0) {
+    for (space; space; space--) {
+      task += ' '
+    }
+  }
+
   console.log(task + ' => ' + time)
 }
