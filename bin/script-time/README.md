@@ -17,4 +17,4 @@ Very easy:
 
 It will just log in the console the tasks and the total time for each of these tasks.
 
-Nothing fancy, so there is no error handling or default time if you don't provide the arguments.
+If you don't provide the date range it will output a report for the current month.
