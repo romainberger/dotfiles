@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Script to output a report from the timetip
- * logs with the tasks and the time spent on
- * in the given range of date
+ * Script to output a report from the timetip logs with the tasks and the time
+ * spent on in the given range of date. Default to the current month.
  *
  * usage: $ node script-time.js <date-start> <date-end>
  * example: $ node script-time.js 2013-10-01 2013-10-31
@@ -12,8 +11,9 @@
 'use strict';
 
 var args    = process.argv
-  , start   = args[2]
-  , end     = args[3]
+  , today   = new Date()
+  , start   = typeof args[2] !== 'undefined' ? args[2] : today.getFullYear()+'-'+(today.getMonth() + 1)+'-01'
+  , end     = typeof args[3] !== 'undefined' ? args[3] : today.getFullYear()+'-'+(today.getMonth() + 1)+'-'+today.getDate()
   , TimeLog = require('timetip').TimeLog
   , log     = new TimeLog('~/.timelogs')
   , start   = log.parseDate(start)
@@ -54,6 +54,7 @@ month.dates.forEach(function(date) {
 })
 
 // Output the results
+console.log('Report: '+start+' - '+end)
 for (var task in tasks) {
   var time = msToTime(tasks[task])
   console.log(task + ' => ' + time)
