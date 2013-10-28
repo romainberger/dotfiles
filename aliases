@@ -8,3 +8,4 @@ alias got='got' # Fuck typos
 alias flushdns='sudo dscacheutil -flushcache'
 alias t='timetip --no-color'
 alias timereport='node /Users/romainberger/Web/Bbs/bin/script-time.js'
+alias b='boom'
