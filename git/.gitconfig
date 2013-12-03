@@ -12,6 +12,7 @@
 	rmall = !git rm $(git ls-files -d)
 	count = !git shortlog -sn
 	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+	list-assume-unchanged = !sh -c 'git ls-files -v | grep "^[a-z]"'
 [core]
 	quotepath = false
 	excludesfile = /Users/romainberger/.gitignore_global
