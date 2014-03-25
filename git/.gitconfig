@@ -8,6 +8,7 @@
 	br = branch
 	ci = commit
 	st = status
+	stu = status -uno
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	rmall = !git rm $(git ls-files -d)
 	count = !git shortlog -sn
