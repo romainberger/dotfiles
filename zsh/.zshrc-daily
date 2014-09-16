@@ -1,6 +1,10 @@
 ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+command_not_found_handler () {
+    git $* || return 127
+}
+
 alias ..="cd .."
 alias g='git'
 alias got='git' # Fuck typos
@@ -12,6 +16,14 @@ alias it='git'  # Or just learn how to fucking type
 alias flushdns='sudo dscacheutil -flushcache'
 alias bundle='nocorrect bundle'
 alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
+alias force-composer='./composer update --prefer-source --no-interaction'
+alias ms='make -B submodule'
+alias mda='make dump-autoload'
+alias mcu='make composer-update'
+alias bower='bower --allow-root'
+alias check-js='jshint --config ~/dailymotion/scripts/git/jshint-conf.json'
+alias perm='stat -c "%a %n"'
+alias fuck='sudo $(fc -ln -1)'
 
 alias dev='ssh rberger@rberger.dev.dailymotion.com'
 
