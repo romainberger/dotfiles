@@ -15,4 +15,5 @@ alias bundle='nocorrect bundle'
 alias phplog='tail -f /Applications/MAMP/logs/php_error.log'
 alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
 alias fuck='sudo $(fc -ln -1)'
-alias stats='git log --shortstat --author="Romain Berger" | grep -E "fil(e|es) changed" | awk '"'"'{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed: ", files, "lines inserted: ", inserted, "lines deleted: ", deleted }'"'"
+alias stats='git log --shortstat --author="Romain Berger" | grep -E "fil(e|es) changed" | awk '"'"'{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed:  ", files, "\nlines inserted: ", inserted, "\nlines deleted:  ", deleted }'"'"
+
