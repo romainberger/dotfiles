@@ -5,6 +5,15 @@ command_not_found_handler () {
     git $* || return 127
 }
 
+daily() {
+    g ru && g reset --hard origin/master
+
+    if [ $# -eq 1 ]
+    then
+        g co -b $@
+    fi
+}
+
 alias ..="cd .."
 alias g='git'
 alias got='git' # Fuck typos
