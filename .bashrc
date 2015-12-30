@@ -17,8 +17,13 @@ command_not_found_handle () {
     git $* || return 127
 }
 
+open_mira_docker () {
+    cd ~/Dev/mira
+    docker-compose run --service-ports dev /bin/bash || docker exec -it $(docker ps | grep mira_dev | sed -e "s/ .*//") /bin/bash
+}
+
 alias mira="cd ~/Dev/mira"
-alias mira-dev="cd ~/Dev/mira && docker-compose run --service-ports dev /bin/bash"
+alias mira-dev="open_mira_docker"
 
 # add docker stuff to new windows if a machine is running
 if [ $(docker-machine status default) == "Running" ]; then
