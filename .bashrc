@@ -11,10 +11,14 @@ alias bundle='nocorrect bundle'
 alias ios='open -a iPhone\ Simulator'
 alias fuck='sudo $(fc -ln -1)'
 alias perm='stat -c "%a %n"'
+alias dsh='docker exec -it $(docker ps | grep mira_dev | sed -e "s/ .*//") /bin/bash'
 
 command_not_found_handle () {
     git $* || return 127
 }
+
+alias mira="cd ~/Dev/mira"
+alias mira-dev="cd ~/Dev/mira && docker-compose run --service-ports dev /bin/bash"
 
 # add docker stuff to new windows if a machine is running
 if [ $(docker-machine status default) == "Running" ]; then
