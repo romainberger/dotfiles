@@ -1,23 +1,28 @@
 {
 	"auto_indent": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Menlo Regular",
-	"font_size": 12.0,
-	"highlight_modified_tabs": true,
-	"scroll_past_end": true,
-	"word_wrap": true,
-	"show_minimap": false,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"folder_exclude_patterns": [
+	"folder_exclude_patterns":
+	[
 		".svn",
 		".git",
 		".hg",
 		"CVS",
 		".sass-cache",
 		".module-cache"
-	]
+	],
+	"font_face": "Menlo Regular",
+	"font_size": 12.0,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"scroll_past_end": true,
+	"show_minimap": false,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
 }
-
