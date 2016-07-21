@@ -9,6 +9,7 @@
 	ci = commit
 	st = status
 	stu = status -uno
+	ru = remote update
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	rmall = !git rm $(git ls-files -d)
 	count = !git shortlog -sn
