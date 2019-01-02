@@ -17,9 +17,11 @@
 	list-assume-unchanged = !sh -c 'git ls-files -v | grep "^[a-z]"'
         cherrypick = cherry-pick
         wip = !sh -c 'git add . && git ci -n -m "temp"'
+	wipf = !sh -c 'git add . && git ci -n -m "WIP"'
         branch-name = "!git rev-parse --abbrev-ref HEAD"
         p = "!git push origin $(git branch-name)"
         pf = "!git push -f origin $(git branch-name)"
+	rr = "!git ru && git reset --hard origin/$(git branch-name)"
 [core]
 	quotepath = false
 	excludesfile = /Users/romainberger/.gitignore_global
