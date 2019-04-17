@@ -1,7 +1,12 @@
 {
 	"auto_indent": true,
 	"bold_folder_labels": true,
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"caret_extra_width": 0,
+	"caret_style": "phase",
 	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -17,12 +22,18 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
+	"mini_diff": "auto",
 	"scroll_past_end": true,
+	"show_definitions": false,
 	"show_minimap": false,
+	"show_tab_close_buttons": false,
+	"spacegray_fileicons": false,
 	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+	"word_wrap": true,
+	"fold_buttons": false
 }
+
