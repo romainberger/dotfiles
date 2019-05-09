@@ -20,6 +20,7 @@ export PS1='🍕  \[\e[1;36m\]\W\[\e[0:33m\]\[ \e[1;31m`git branch 2> /dev/null 
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
+  __git_complete g __git_main
 fi
 
 if [ -f ~/kcals-completion.bash ]; then
