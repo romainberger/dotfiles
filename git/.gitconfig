@@ -22,6 +22,8 @@
         p = "!git push origin $(git branch-name)"
         pf = "!git push -f origin $(git branch-name)"
 	rr = "!git ru && git reset --hard origin/$(git branch-name)"
+	amend = "!git ci --amend --no-edit"
+        yolo = "!git add . && git amend && git pf"
 [core]
 	quotepath = false
 	excludesfile = /Users/romainberger/.gitignore_global
