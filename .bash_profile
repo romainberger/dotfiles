@@ -1,11 +1,5 @@
 alias ..="cd .."
 alias g='git'
-alias got='git' # Fuck typos
-alias gut='git' # Fuck typos again
-alias gti='git' # Fuck typos for real
-alias gi='git'  # Fuck
-alias gt='git'  # Crap
-alias it='git'  # Or just learn how to fucking type
 alias flushdns='sudo dscacheutil -flushcache'
 alias fuck='sudo $(fc -ln -1)'
 alias perm='stat -c "%a %n"'
