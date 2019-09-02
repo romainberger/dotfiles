@@ -5,7 +5,16 @@ alias fuck='sudo $(fc -ln -1)'
 alias perm='stat -c "%a %n"'
 alias y=yarn
 alias k=kcals
-alias vol='function _vol(){ osascript -e "set volume output volume $1";}; _vol'
+
+function _vol() {
+    if [ $# -eq 0 ]; then
+        osascript -e 'output volume of (get volume settings)'
+    else
+        osascript -e "set volume output volume $1"
+    fi
+}
+
+alias vol=_vol
 
 git_dirty_flag() {
   git status 2> /dev/null | grep -c : | awk '{if ($1 > 0) print "🔥"}'
